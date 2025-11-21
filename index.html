@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My To-Do List</title>
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
+    
 </head>
 <body>
     <div class="container">
@@ -30,14 +30,19 @@
 
             <div class="input-container">
 
-                <input type="text" placeholder="Add new task...">
-                <button type="button">Add Task</button>
+                <input type="text" placeholder="Add new task..." id="task-input">
+                <button type="button" id="add-task" onclick="addTask()">Add Task</button>
 
             </div>
 
-            
+
             <div class="task-list">
 
+            </div>
+            <div class="to-do-list" id="to-do-list">
+                <ul>
+
+                </ul>
             </div>
         
         </div>
@@ -62,4 +67,5 @@
    
     
 </body>
+<script src="index.js"></script>
 </html>
